@@ -268,8 +268,8 @@ func runExporter(cmd *cobra.Command, args []string) error {
 	server := &http.Server{
 		Addr:         listenAddress,
 		Handler:      nil,
-		ReadTimeout:  30 * time.Second,
-		WriteTimeout: 30 * time.Second,
+		ReadTimeout:  300 * time.Second,
+		WriteTimeout: 300 * time.Second,
 	}
 
 	// Handle graceful shutdown
